@@ -1,0 +1,209 @@
+@import "variables";
+@import "../valo/valo";
+@import "addons";
+
+.client {
+  @include valo;
+  @include addons;
+
+  .v-app {
+    color: #000000;
+  }
+
+  .valo-menu {
+    border-right: none;
+    color: #000000;
+
+    .badgewrapper {
+      position: relative;
+      padding: 0 !important;
+    }
+
+    .v-ddwrapper {
+      display: block;
+    }
+  }
+
+  .valo-menu-part.large-icons {
+    background-color: #889294;
+  }
+
+  .valo-menu-part.large-icons .valo-menu-item.selected {
+    background: #D2C9C0;
+  }
+
+  .valo-menu-title {
+    line-height: 1.2;
+  }
+
+  .valo-menu-item {
+    overflow: hidden;
+  }
+
+  .valo-menu-item.selected .v-icon {
+    color: #000000;
+  }
+
+  .v-label.h1.no-margin {
+    color: #000000 !important;
+  }
+
+  .top-menu {
+    background-color: #6CA59C;
+  }
+
+  .v-menubar-user-menu {
+    text-align: left;
+    font-size: large;
+  }
+
+  .v-grid-cell.align-right {
+    text-align: right;
+  }
+
+  .v-grid-cell {
+    color: black;
+    border-color: #d4d4d4;
+  }
+
+  .v-grid-row-selected > .v-grid-cell {
+    border-color: #d4d4d4;
+  }
+
+  .v-panel.et_panel {
+    border: valo-border();
+    vertical-align: middle;
+    min-height: 31px;
+    height: 31px;
+    color: black;
+  }
+
+  .v-label.et_counter {
+    border-radius: 3px;
+    margin: 2px 2px;
+    padding: 2px 2px;
+    min-height: 25px !important;
+    min-width: 25px !important;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #197de1;
+    color: #c8dbed;
+  }
+
+  .v-label.et_text {
+    text-overflow: ellipsis;
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+    height: 100%;
+    line-height: 25px;
+    color: inherit;
+  }
+
+  .v-grid-row.et-done > td {
+    font-weight: normal;
+  }
+
+  .v-grid-row.et-undone > td {
+    font-weight: bold;
+  }
+
+  .v-label.et_icon {
+    min-height: 25px !important;
+    min-width: 25px !important;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    color: inherit; //black
+
+    &.clickable:hover {
+      color: #115bdc;
+    }
+  }
+
+  .v-label.et_icon_emergency {
+    min-height: 25px !important;
+    min-width: 25px !important;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    color: $v-task-emergency-color; //black
+  }
+
+  .v-label-colored {
+    color: $v-focus-color;
+    text-transform: uppercase;
+    //letter-spacing: 5px;
+    font-weight: 700;
+
+  }
+
+  .v-panel-caption-box {
+    line-height: 16px;
+    //color:blue;
+  }
+
+  .v-label.h1.no-margin {
+    color: #115bdc;
+  }
+
+  .invisible {
+    display: none;
+    width: 0px;
+    height: 0px;
+    line-height: 0px;
+  }
+
+  .v-window-wrap, .v-tabsheet-tabsheetpanel {
+    background-color: #fffff0 !important;
+  }
+
+  .v-formlayout-captioncell {
+    text-align: right;
+  }
+
+  .v-window-maximizebox:before {
+    font-family: "Vaadin-Icons";
+    font-size: medium;
+    content: "\E776";
+  }
+
+  .v-window-restorebox:before {
+    font-family: "Vaadin-Icons";
+    font-size: medium;
+    content: "\E76B";
+  }
+
+  .v-window-closebox:before {
+    font-family: "Vaadin-Icons";
+    font-size: medium;
+    content: "\E7AD";
+  }
+
+  .v-loading-indicator-wait {
+    width: 96%;
+    .v-ff & {
+      width: 90%;
+    }
+    @include animation(v-progress-wait 5s forwards, v-progress-wait 4s infinite backwards);
+  }
+
+  .v-loading-indicator[style*="none"]:before {
+    display: none;
+  }
+
+  .v-loading-indicator-delay:before, .v-loading-indicator-wait:before {
+    content: "";
+    position: fixed;
+    background: #fff url(../valo/shared/img/spinner.gif) no-repeat 50%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: auto;
+    animation: valo-animate-in-fade 0.3s;
+    opacity: 0.5;
+  }
+}

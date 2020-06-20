@@ -1,0 +1,106 @@
+$v-background-color: #fafafa;
+$v-app-background-color: #e7ebf2;
+$v-panel-background-color: #fff;
+//$v-focus-color: #3b5998;
+//$v-font-color: #37404E;
+
+$v-animations-enabled: true;
+
+$v-font-family: sans-serif;
+$v-font-size: 14px;
+$v-unit-size: $v-font-size * 2;
+$v-border-radius: 3px;
+
+$v-layout-margin-top: round($v-unit-size / 2);
+$v-layout-margin-right: round($v-unit-size / 2);
+$v-layout-margin-bottom: round($v-unit-size / 2);
+$v-layout-margin-left: round($v-unit-size / 2);
+$v-layout-spacing-horizontal: round($v-unit-size / 2);
+$v-layout-spacing-vertical: round($v-unit-size / 2);
+
+$v-grid-row-height: $v-unit-size;
+$v-grid-cell-padding-horizontal: round($v-unit-size / 6);
+$v-grid-cell-horizontal-border: 0px;
+$v-grid-cell-focused-border: 0px;
+//$v-grid-cell-focused-border: max(2px, first-number($v-border)) solid $v-selection-color !default;
+
+// Flat UI colors
+$v-default-color: #d3d3d3;
+$v-default-color-dark: #898989;
+$v-primary-color: #428bca;
+$v-primary-color-dark: #3071a9;
+$v-success-color: #5cb85c;
+$v-success-color-dark: #449d44;
+$v-info-color: #5bc0de;
+$v-info-color-dark: #31b0d5;
+$v-warning-color: #f0ad4e;
+$v-warning-color-dark: #ec971f;
+$v-danger-color: #d9534f;
+$v-danger-color-dark: #c9302c;
+
+// BRIS colors
+$v-default-color-bris: #FFFFFF;
+$v-info-color-bris: #CDC9C9;
+$v-success-color-bris: #90EE90;
+//#b6d7a8;
+$v-inwork-color-bris: #87CEEB;
+//#95b1c8;
+$v-warning-color-bris: #FFD700;
+//#f0b96a;
+$v-danger-color-bris: #FA8072;
+//#fb9f95;
+$v-plan-color-bris: #F5DEB3;
+//#cc7722;
+
+// Task colors: Old
+//$v-task-darken-percent: 15%;
+//$v-task-default-color: #FFFFFF !default;
+//$v-task-inwork-color: #87CEEB !default;
+//$v-task-inwork-color-progress: darken($v-task-inwork-color, $v-task-darken-percent) !default;
+//$v-task-success-color: #90EE90 !default;
+//$v-task-success-color-progress: darken($v-task-success-color, $v-task-darken-percent) !default;
+//$v-task-warning-color: #FFD700 !default;
+//$v-task-warning-color-progress: darken($v-task-warning-color, $v-task-darken-percent) !default;
+//$v-task-emergency-color: #FA8072 !default;
+//$v-task-emergency-color-progress: darken($v-task-emergency-color, $v-task-darken-percent) !default;
+//$v-task-plan-color: #F5DEB3 !default;
+//$v-task-plan-color-progress: darken($v-task-plan-color, $v-task-darken-percent) !default;
+//$v-marker-color: rgba(255, 0, 0, .4) !default;
+//$v-error-color: $v-error-indicator-color;
+
+// Task colors: Pastel Greys
+$v-task-darken-percent: 10%;
+$v-task-darken2-percent: 30%;
+$v-task-default-color: #FFFFFF !default;
+$v-task-default-textcolor: black !default;
+$v-task-info-color: #C8C8C8 !default;
+$v-task-info-color-progress: darken($v-task-info-color, $v-task-darken-percent) !default;
+$v-task-info-color-darken: darken($v-task-info-color, $v-task-darken2-percent) !default;
+$v-task-inwork-color: #aacbd9 !default;
+$v-task-inwork-color-progress: darken($v-task-inwork-color, $v-task-darken-percent) !default;
+$v-task-inwork-color-darken: darken($v-task-inwork-color, $v-task-darken2-percent) !default;
+$v-task-success-color: #cee0c0 !default;
+$v-task-success-color-progress: darken($v-task-success-color, $v-task-darken-percent) !default;
+$v-task-success-color-darken: darken($v-task-success-color, $v-task-darken2-percent) !default;
+$v-task-warning-color: #fecc8c !default;
+$v-task-warning-color-progress: darken($v-task-warning-color, $v-task-darken-percent) !default;
+$v-task-warning-color-darken: darken($v-task-warning-color, $v-task-darken2-percent) !default;
+$v-task-emergency-color: #f78387 !default;
+$v-task-emergency-color-progress: darken($v-task-emergency-color, $v-task-darken-percent) !default;
+$v-task-emergency-color-darken: darken($v-task-emergency-color, $v-task-darken2-percent) !default;
+$v-task-plan-color: #FFF8DC !default; //#d5ac6e
+$v-task-plan-color-progress: darken($v-task-plan-color, $v-task-darken-percent) !default;
+$v-task-plan-color-darken: darken($v-task-plan-color, $v-task-darken2-percent) !default;
+$v-task-plan-textcolor: black;
+$v-task-textcolor: white;
+
+$v-marker-color: black !default;
+$v-error-color: $v-error-indicator-color;
+
+$v-event-default-color: $v-task-default-color;
+$v-event-inwork-color: $v-task-inwork-color;
+$v-event-success-color: $v-task-success-color;
+$v-event-info-color: $v-task-info-color;
+$v-event-warning-color: $v-task-warning-color;
+$v-event-emergency-color: $v-task-emergency-color;
+$v-event-plan-color: $v-task-plan-color;
